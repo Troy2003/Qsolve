@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Qsolve/static/css/main.3620612b.css",
+    "main.js": "/Qsolve/static/js/main.191b8bc4.js",
+    "index.html": "/Qsolve/index.html",
+    "main.3620612b.css.map": "/Qsolve/static/css/main.3620612b.css.map",
+    "main.191b8bc4.js.map": "/Qsolve/static/js/main.191b8bc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3620612b.css",
+    "static/js/main.191b8bc4.js"
+  ]
+}
