@@ -1,10 +1,8 @@
-import React,{ useState} from "react";
-import { Link } from "react-router-dom";
-
-
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  
+  const navigate = useNavigate();
   const [name, setName] = useState('');
 
   return (
@@ -26,14 +24,17 @@ const Login = () => {
               type="text"
               placeholder="ex@: Chandan Werulkar"
               value={name}
-              onChange={(e)=>{setName(e.target.value)}}
+              onChange={(e) => { setName(e.target.value) }}
             />
 
             <button
               className="text-white bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-400 px-6 py-2 rounded-md text-xl font-bold hover:bg-none hover:border hover:border-cyan-400 hover:text-cyan-400 font-['Poppins']"
-              type="button" onClick={window.localStorage.setItem("name" , name)}
+              type="button" onClick={() => {
+                window.localStorage.setItem("name", name)
+                navigate('/support');
+              }}
             >
-              <Link to="/support">Get Started</Link>
+              Get Started
             </button>
           </div>
         </div>
